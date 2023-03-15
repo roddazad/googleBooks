@@ -7,7 +7,7 @@ const {
 const http = require("http");
 const { typeDefs, resolvers } = require("./schemas");
 const db = require('./config/connection');
-
+const path = require('path');
 const PORT = process.env.PORT || 3001;
 const app = express();
 const httpServer = http.createServer(app);
